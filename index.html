@@ -94,19 +94,34 @@ overflow:hidden;
 border-radius:12px;
 }
 
-.ba-container img{
+/* الصورة الخلفية = BEFORE = BLUR */
+.ba-container > img{
 position:absolute;
 top:0;left:0;
 width:100%;
 height:100%;
 object-fit:cover;
+filter: blur(6px) brightness(0.95);
+transform: scale(1.05);
 }
 
+/* الصورة الفوق = AFTER = واضحة */
 .ba-after{
+position:absolute;
+top:0;
+left:0;
+height:100%;
 width:50%;
 overflow:hidden;
 }
 
+.ba-after img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* Slider */
 .ba-slider{
 position:absolute;
 top:0;
@@ -180,7 +195,7 @@ font-weight:700
 <div class="logo">
 <img src="logo.png">
 </div>
-<a class="header-btn" href="https://wa.me/212628882646?text=Salam%20bghit%20ntloub%20karim%20retinol%20BADAOUI">اطلب دابا</a>
+<a class="header-btn" href="https://wa.me/212728882646">اطلب دابا</a>
 </header>
 
 <section class="hero">
@@ -189,7 +204,7 @@ font-weight:700
 <h1>🔥 ودّعي الحبوب والتجاعيد خلال 30 يوماً</h1>
 <p>كريم BADAOUI’s بالريتينول النباتي كيرجّع لبشرتك النعومة والنضارة بلا تهيّج.</p>
 <div class="price"><del>299 درهم</del> 199 درهم فقط</div>
-<a class="btn" href="https://wa.me/212628882646?text=Salam%20bghit%20ntloub%20karim%20retinol%20BADAOUI">🛒 اطلب الآن عبر واتساب</a>
+<a class="btn" href="https://wa.me/212728882646">🛒 اطلب الآن عبر واتساب</a>
 </div>
 
 <img src="mockup-white-oil-60ml-main.png" class="hero-img">
@@ -236,34 +251,15 @@ font-weight:700
 </div>
 </section>
 
-<section class="section">
-<h2>علاش تختاري BADAOUI’s؟</h2>
-<div class="features">
-<div class="box">🌿 تركيبة طبيعية</div>
-<div class="box">✨ كينقص التجاعيد</div>
-<div class="box">💧 كيرطب وينقّي البشرة</div>
-<div class="box">🧪 مختبر جلدياً</div>
-</div>
-</section>
-
-<section class="section">
-<h2>شنو قالو اللي جربوه؟</h2>
-<div class="testimonials">
-<div class="box">⭐⭐⭐⭐⭐ بان الفرق فـ أسبوعين</div>
-<div class="box">⭐⭐⭐⭐⭐ أحسن كريم استعملت</div>
-<div class="box">⭐⭐⭐⭐⭐ كيعطي نعومة وإشراق</div>
-</div>
-</section>
-
 <div class="footer">
 <p>© 2026 BADAOUI’s — جميع الحقوق محفوظة</p>
 <p>📞 0628882646 — 📍 أكادير</p>
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/212628882646?text=Salam%20bghit%20ntloub%20karim%20retinol%20BADAOUI">💬 واتساب</a>
+<a class="whatsapp-float" href="https://wa.me/212728882646">💬 واتساب</a>
 
 <div class="mobile-bar">
-<a href="https://wa.me/212628882646?text=Salam%20bghit%20ntloub%20karim%20retinol%20BADAOUI">🛒 اطلب الآن</a>
+<a href="https://wa.me/212728882646">🛒 اطلب الآن</a>
 </div>
 
 <script>
